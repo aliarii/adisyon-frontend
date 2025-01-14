@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/adisyon-frontend/static/css/main.bd7d49bc.css",
-    "main.js": "/adisyon-frontend/static/js/main.f2108225.js",
+    "main.js": "/adisyon-frontend/static/js/main.7a322628.js",
     "static/js/453.32bf7dd4.chunk.js": "/adisyon-frontend/static/js/453.32bf7dd4.chunk.js",
     "static/media/inter-latin-ext-400-normal.woff": "/adisyon-frontend/static/media/inter-latin-ext-400-normal.1c20f7dc20d731a18fcd.woff",
     "static/media/inter-latin-400-normal.woff": "/adisyon-frontend/static/media/inter-latin-400-normal.b0c8fe9db56dd415a25a.woff",
@@ -20,11 +20,11 @@
     "index.html": "/adisyon-frontend/index.html",
     "static/media/getFetch.cjs": "/adisyon-frontend/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.bd7d49bc.css.map": "/adisyon-frontend/static/css/main.bd7d49bc.css.map",
-    "main.f2108225.js.map": "/adisyon-frontend/static/js/main.f2108225.js.map",
+    "main.7a322628.js.map": "/adisyon-frontend/static/js/main.7a322628.js.map",
     "453.32bf7dd4.chunk.js.map": "/adisyon-frontend/static/js/453.32bf7dd4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd7d49bc.css",
-    "static/js/main.f2108225.js"
+    "static/js/main.7a322628.js"
   ]
 }
