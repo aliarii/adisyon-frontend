@@ -5,7 +5,7 @@ import * as actionTypes from "./ActionType";
 export const registerOwner = (reqData) => async (dispatch) => {
     dispatch({ type: actionTypes.REGISTER_REQUEST })
     try {
-        const { data } = await api.post(`/auth/register/owner`, reqData.userData)
+        const { data } = await api.post(`/api/auth/register/owner`, reqData.userData)
         if (data.jwt) localStorage.setItem("jwt", data.jwt);
 
         reqData.navigate("/")
@@ -21,7 +21,7 @@ export const registerOwner = (reqData) => async (dispatch) => {
 export const registerEmployee = (reqData) => async (dispatch) => {
     dispatch({ type: actionTypes.REGISTER_EMPLOYEE_REQUEST })
     try {
-        const { data } = await api.post(`/auth/register/employee`, reqData.data)
+        const { data } = await api.post(`/api/auth/register/employee`, reqData.data)
 
         dispatch({ type: actionTypes.REGISTER_EMPLOYEE_SUCCESS, payload: data.jwt })
         console.log("register employee success", data)
@@ -40,7 +40,7 @@ export const loginUser = (reqData) => async (dispatch) => {
         if (!reqData.userData.email.includes('@'))
             reqData.userData.email = reqData.userData.email + '@adisyon.com'
 
-        const { data } = await api.post(`/auth/login`, reqData.userData)
+        const { data } = await api.post(`/api/auth/login`, reqData.userData)
 
         if (data.jwt)
             reqData.login(data.jwt);
@@ -86,7 +86,7 @@ export const logoutUser = () => async (dispatch) => {
 export const validateToken = (jwt) => async (dispatch) => {
     dispatch({ type: actionTypes.VALIDATE_TOKEN_REQUEST })
     try {
-        const { data } = await api.get('/auth/validate-token', {
+        const { data } = await api.get('/api/auth/validate-token', {
             headers: {
                 'Authorization': `Bearer ${jwt}`,
             },
