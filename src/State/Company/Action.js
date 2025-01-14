@@ -19,7 +19,7 @@ export const getAllCompanies = (token) => {
 export const getCompanyById = (id, jwt) => async (dispatch) => {
     dispatch({ type: actionTypes.GET_COMPANY_BY_ID_REQUEST });
     try {
-        const response = await api.get(`api/company/${id}`, {
+        const response = await api.get(`/api/company/${id}`, {
             headers: {
                 Authorization: `Bearer ${jwt}`,
             },

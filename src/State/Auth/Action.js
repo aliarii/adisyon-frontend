@@ -8,7 +8,7 @@ export const registerOwner = (reqData) => async (dispatch) => {
         const { data } = await api.post(`/api/auth/register/owner`, reqData.userData)
         if (data.jwt) localStorage.setItem("jwt", data.jwt);
 
-        reqData.navigate("/")
+        reqData.navigate("/adisyon-frontend/")
         reqData.register();
         dispatch({ type: actionTypes.REGISTER_SUCCESS, payload: data.jwt })
         console.log("register success", data)
