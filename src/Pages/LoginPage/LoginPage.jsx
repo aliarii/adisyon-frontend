@@ -33,7 +33,7 @@ const LoginPage = () => {
     return <Navigate to="/adisyon-frontend/home" />;
   }
   const routeToRegister = () => {
-    navigate(`/register`);
+    navigate(`/adisyon-frontend/register`);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
