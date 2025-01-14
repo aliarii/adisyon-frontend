@@ -17,7 +17,7 @@ i18n
             caches: ['localStorage', 'cookie'],
         },
         backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json', // Path to your translation files
+            loadPath: '/adisyon-frontend/locales/{{lng}}/{{ns}}.json', // Path to your translation files
         }
     });
 
