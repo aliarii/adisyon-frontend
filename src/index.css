@@ -1,0 +1,25 @@
+:root {
+  --rm-gray: #f9f8f9;
+  --rm-blue: #02418b;
+  --rm-green: #02418b;
+  --font-size: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
